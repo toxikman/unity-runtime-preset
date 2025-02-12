@@ -6,10 +6,10 @@ namespace Gilzoide.RuntimePreset.Editor
 {
     public static class ContextMenuItems
     {
-        [MenuItem("CONTEXT/MonoBehaviour/Create Runtime Preset", priority = 10000)]
+        [MenuItem("CONTEXT/Component/Create Runtime Preset", priority = 10000)]
         private static void CreateRuntimePresetFromMonoBehaviour(MenuCommand command)
         {
-            if (command.context is MonoBehaviour component)
+            if (command.context is Component component)
             {
                 CreateRuntimePreset(component);
             }
